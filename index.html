@@ -1,0 +1,171 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AL777OKOMA</title>
+  <meta name="description" content="قالب صفحة هبوط عربية حديثة بسرعة وأداء عاليين" />
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#6d28d9',
+              foreground: '#ffffff'
+            }
+          },
+          boxShadow: {
+            soft: '0 6px 30px rgba(0,0,0,0.08)'
+          },
+          borderRadius: {
+            '2xl': '1.25rem'
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <!-- ملف CSS خارجي -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- شريط علوي -->
+  <header class="sticky top-0 z-50 backdrop-blur border-b border-gray-200 animate-fadeIn">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="font-extrabold text-xl tracking-tight">شِعارُك</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#features" class="hover:underline">المزايا</a>
+        <a href="#pricing" class="hover:underline">الأسعار</a>
+        <a href="#contact" class="hover:underline">تواصل</a>
+      </nav>
+      <button id="openMenu" class="md:hidden p-2 rounded-xl border border-gray-200 bg-black/50" aria-label="قائمة">
+        <i data-lucide="menu"></i>
+      </button>
+      <a href="#contact" class="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-primary text-white shadow-soft animate-bounceSlow">
+        <i data-lucide="rocket" class="w-4 h-4"></i>
+        ابدأ الآن
+      </a>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200 bg-black/70 animate-slideDown">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-3 text-sm">
+        <a class="hover:underline" href="#features">المزايا</a>
+        <a class="hover:underline" href="#pricing">الأسعار</a>
+        <a class="hover:underline" href="#contact">تواصل</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- البطل -->
+  <section id="home" class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center animate-fadeIn">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-black leading-tight mb-4 animate-slideInRight">موقع حديث، سريع، ومصمَّم بعناية</h1>
+      <p class="mb-6 text-lg animate-slideInLeft">هذا القالب يمنحك انطلاقة قوية لبناء موقعك بالعربية مع دعم كامل للاتجاه من اليمين لليسار.</p>
+      <div class="flex gap-3 animate-fadeInUp">
+        <a href="#features" class="px-5 py-3 rounded-2xl bg-primary text-white shadow-soft inline-flex items-center gap-2">
+          <i data-lucide="zap" class="w-4 h-4"></i>
+          ابدأ التجربة
+        </a>
+        <a href="#pricing" class="px-5 py-3 rounded-2xl border border-gray-300 bg-black/50 inline-flex items-center gap-2">
+          <i data-lucide="info" class="w-4 h-4"></i>
+          تعرّف أكثر
+        </a>
+      </div>
+    </div>
+    <div class="border rounded-3xl p-6 shadow-soft bg-black/50 animate-zoomIn">
+      <div class="aspect-[4/3] rounded-2xl grid place-items-center text-center">
+        <div>
+          <i data-lucide="rocket" class="w-10 h-10 mx-auto mb-3"></i>
+          <p class="font-medium">ضع هنا صورة منتجك أو لقطة شاشة</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- المزايا -->
+  <section id="features" class="max-w-6xl mx-auto px-4 py-12 md:py-16 animate-fadeInUp">
+    <h2 class="text-3xl font-extrabold mb-8">لماذا هذا القالب؟</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <article class="rounded-3xl border bg-black/50 p-6 shadow-soft animate-fadeInUp delay-1">
+        <h3 class="text-lg font-semibold">سرعة وأداء</h3>
+        <p class="mt-1">تحميل سريع وتجربة سلسة بفضل بساطة الملف الواحد.</p>
+      </article>
+      <article class="rounded-3xl border bg-black/50 p-6 shadow-soft animate-fadeInUp delay-2">
+        <h3 class="text-lg font-semibold">أمان موثوق</h3>
+        <p class="mt-1">أفضل الممارسات الأساسية لحماية مستخدميك.</p>
+      </article>
+      <article class="rounded-3xl border bg-black/50 p-6 shadow-soft animate-fadeInUp delay-3">
+        <h3 class="text-lg font-semibold">قابل للتوسع</h3>
+        <p class="mt-1">ابدأ صغيرًا وأضف أقسامًا ومكونات بسهولة.</p>
+      </article>
+      <article class="rounded-3xl border bg-black/50 p-6 shadow-soft animate-fadeInUp delay-4">
+        <h3 class="text-lg font-semibold">تصميم أنيق</h3>
+        <p class="mt-1">جمالية عصرية وزوايا مستديرة ومسافات متوازنة.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- الأسعار -->
+  <section id="pricing" class="max-w-6xl mx-auto px-4 py-12 md:py-16 animate-fadeIn">
+    <h2 class="text-3xl font-extrabold mb-8">الأسعار</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="rounded-3xl border bg-black/50 p-6 shadow-soft animate-zoomIn">
+        <h3 class="text-xl font-bold">أساسي</h3>
+        <p>مجاني</p>
+      </article>
+      <article class="rounded-3xl border bg-black/50 p-6 shadow-soft animate-zoomIn delay-1">
+        <h3 class="text-xl font-bold">احترافي</h3>
+        <p>$19/شهر</p>
+      </article>
+      <article class="rounded-3xl border bg-black/50 p-6 shadow-soft animate-zoomIn delay-2">
+        <h3 class="text-xl font-bold">مؤسسي</h3>
+        <p>تواصل معنا</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- تواصل -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-12 md:py-16 animate-fadeInUp">
+    <div class="rounded-3xl border bg-black/50 p-8 shadow-soft grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-3xl font-extrabold mb-2">تواصل معنا</h2>
+        <p class="mb-6">راسلنا لأي استفسار أو لطلب تطوير مخصص لمشروعك.</p>
+      </div>
+      <form id="contactForm" class="grid gap-4 animate-slideInLeft">
+        <div class="grid gap-2">
+          <label for="name" class="text-sm">الاسم</label>
+          <input id="name" required class="px-4 py-3 rounded-2xl border w-full bg-black/30 text-white" placeholder="اسمك" />
+        </div>
+        <div class="grid gap-2">
+          <label for="email" class="text-sm">البريد الإلكتروني</label>
+          <input type="email" id="email" required class="px-4 py-3 rounded-2xl border w-full bg-black/30 text-white" placeholder="you@example.com" />
+        </div>
+        <div class="grid gap-2">
+          <label for="message" class="text-sm">رسالتك</label>
+          <textarea id="message" rows="4" required class="px-4 py-3 rounded-2xl border w-full bg-black/30 text-white" placeholder="اكتب هنا..."></textarea>
+        </div>
+        <button class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-primary text-white animate-bounceSlow">
+          <i data-lucide="send"></i>
+          إرسال
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- تذييل -->
+  <footer class="border-t border-gray-200 bg-black/70 animate-fadeIn">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© <span id="year"></span> شعارك — كل الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => { if (window.lucide) lucide.createIcons(); });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
